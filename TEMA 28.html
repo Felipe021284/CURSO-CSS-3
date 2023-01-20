@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
+    <title>TEMA 28</title>
+    <style>
+    /* COLOR DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, red,black,red,white );
+}
+    
+    
+        body {
+    color:white;
+    font-family: arial;
+    Background-color:black;
+    font-family: 'Baloo 2';
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow:0px 0px 10px 1px inset white,
+                  0px 0px 10px 1px white;
+  text-shadow: -2px 1px purple;
+  
+  min-height: 30px;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+  
+/*codigo de fondo animado*/
+  }
+  @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+ .uno{
+    color:white;
+    border: 1px white solid;
+    box-shadow:0px 0px 10px 2px inset white,
+               0px 0px 10px 2px white;
+    padding:10px;
+    Margin:5px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+      }
+      @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+
+      
+   A,h1,h2{
+       animation: animate 20s infinite linear;
+       text-align:center; 
+       text-shadow: -2px 2px black,
+          -3px 3px gray;
+       text-decoration:none;
+        }
+        @keyframes animate
+{
+    0%,100%{
+        color: lawngreen;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: black;
+    }
+}
+
+   
+   b{Color:blue;
+        text-transform: uppercase;
+        font-style: italic;
+        
+       
+   }
+   img{
+       border:2px solid black
+       ;
+       width:100%;
+   }
+   
+   p {
+    text-indent: 30px;
+    text-transform: capitalize;
+}
+
+.dos{
+
+    background-color: rgba(0,0, 0,0.1)
+}
+
+
+/*ejemplos*/
+
+
+.tres{
+  filter: opacity(70%);
+}
+
+
+   .cuatro {
+  filter: brightness(50%);
+}
+   
+   .cinco {
+  filter: brightness(1.9);
+}
+
+.seis{
+    filter: contrast(140%);
+ }
+ 
+ 
+ .siete {
+  filter:blur(5px);
+}
+   
+   </style>
+    </head>
+    <body>
+    <div class="menu">
+      <a 
+      href="index.html"><i class="fa fa-css3" aria-hidden="true"></i> 
+INICIO</a>
+      
+            
+        </div>
+   <div class="uno">
+   <div class="dos">
+   <article>
+<h1>
+La función opacity
+
+</h1>
+<p>
+    La función <b>
+    opacity </b><br />
+    establece la opacidad de una imagen para cambiar su transparencia. 
+
+0% crea una imagen totalmente transparente, mientras que 100% es la imagen original.
+    
+    
+</p>
+<p>imagen normal</p>
+  <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+  <p>imagen con filtro de opacidad</p>
+    <img class="tres" src="http://www.sololearn.com/images/tree.jpg">
+    
+    <img src="https://i.ibb.co/KLQJGn5/IMG-20230119-183447.jpg" alt="IMG-20230119-183447" border="0">
+
+
+
+<h1>
+    La función brightness
+</h1>
+
+
+<p>La función <b>
+ brightness(amount) </b><br />
+ ajusta el brillo de una imagen, haciendo que parezca más brillante o más oscura. <br />
+El parámetro amount determina el nivel de brillo de la imagen.<br /> El parámetro puede ser un valor porcentual o numérico. <br />
+
+Un valor del 0% resulta en una imagen totalmente negra. <br />
+Un valor del 100% no modifica la imagen. <br />
+Cualquier cantidad superior al 100% produce una imagen más brillante.
+    
+    
+    
+</p>
+<p>imagen normal</p>
+<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+<p>imagen con filtro brightness(amount) con valor de porcentaje
+</p>
+    <img class="cuatro" src="http://www.sololearn.com/images/tree.jpg">
+    
+<img src="https://i.ibb.co/4ZByQpY/IMG-20230119-192104.jpg" alt="IMG-20230119-192104" border="0">
+<p>
+    Un valor númerico de 0.5 tiene el mismo efecto que un valor porcentual del 50%. Un valor de 1 es lo mismo que el 100%.
+    
+</p>
+
+<p>imagen normal</p>
+ <img src="http://www.sololearn.com/images/tree.jpg">
+<p>imagen con filtro brightness(amount) con valor numerico
+</p>
+    <img class="cinco" src="http://www.sololearn.com/images/tree.jpg">
+    
+    
+    <img src="https://i.ibb.co/3CTKF4v/IMG-20230119-201337.jpg" alt="IMG-20230119-201337" border="0">
+    
+
+
+<b>nota</b>
+<p>
+    Un valor inferior al 100% oscurece la imagen, mientras que uno superior la vuelve más brillante.<br />
+    
+    
+    Cualquier valor negativo volverá negra la imagen.
+    
+</p>
+
+<h1>
+    La función contrast
+</h1>
+
+<p>
+    
+    La función <b>
+ contrast(amount) </b><br />
+  ajusta el contraste de una imagen. 
+El parámetro amount puede ser un valor porcentual o numérico. <br />
+
+Un valor inferior al 100% disminuye el contraste, mientras que uno superior lo aumenta. <br />
+Un valor del 0% creará una imagen totalmente gris, mientras que un valor del 100% deja la imagen igual. <br />
+El valor 0.5 corresponde al 50%, y 1 es lo mismo que el 100%.
+</p>
+
+
+
+<p>imagen normal</p>
+ <img src="http://www.sololearn.com/images/tree.jpg">
+<p>imagen con filtro contrast
+ 
+</p>
+    <img class="seis" src="http://www.sololearn.com/images/tree.jpg">
+    
+    
+    <img src="https://i.ibb.co/tbhRVQc/IMG-20230119-202046.jpg" alt="IMG-20230119-202046" border="0">
+    
+    <b>nota</b>
+    
+    <p>
+        Cualquier valor negativo no modifica la imagen.
+        
+    </p>
+    
+    <h1>
+        La función blur
+    </h1>
+    
+    <p>
+        
+        La función <b>
+        blur </b> <br />
+        aplica un efecto de desenfoque en la imagen. <br />
+La función blur sólo tiene un parámetro: radius. Este define cuántos píxeles de la pantalla entremezclan (a mayor el valor, mayor el desenfoque).
+    </p>
+    
+  <p>imagen normal</p>  
+<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+
+<p>imagen con filtro blur</p>
+    <img class="siete" src="http://www.sololearn.com/images/tree.jpg">
+
+     
+     <img src="https://i.ibb.co/vXZhX6f/IMG-20230119-225334.jpg" alt="IMG-20230119-225334" border="0">
+     
+     <b>nota</b>
+     <p>
+         El parámetro se especifica como una longitud de CSS, pero no acepta valores porcentuales.<br />
+         Si no se proporciona un parámetro, se utiliza el valor 0, el cual deja la imagen igual.
+     </p>
+     
+     
+     
+    </article>
+    </div>
+  </div>
+  </body>
+</html>
